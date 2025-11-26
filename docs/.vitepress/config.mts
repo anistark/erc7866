@@ -1,5 +1,4 @@
 import { defineConfig } from 'vitepress'
-import { fileURLToPath } from 'node:url'
 
 export default defineConfig({
   title: 'ERC-7866',
@@ -34,6 +33,7 @@ export default defineConfig({
       {
         text: 'Core Concepts',
         items: [
+          { text: 'Decentralised Identity', link: '/concepts/decentralised-identity' },
           { text: 'Profiles', link: '/concepts/profiles' },
           { text: 'Privacy', link: '/concepts/privacy' },
           { text: 'Multi-Chain', link: '/concepts/multi-chain' },
@@ -59,6 +59,7 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/anistark/erc7866' },
+      { icon: 'x', link: 'https://x.com/kranirudha' },
     ],
 
     footer: {

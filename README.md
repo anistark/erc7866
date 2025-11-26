@@ -1,4 +1,4 @@
-# ERC-7866: Decentralised User Profiles
+# ⟠ ERC-7866: Decentralised User Profiles
 
 **Gravatar for Web3** — A production-ready standard for decentralized, interoperable user profiles on EVM blockchains. Users can claim unique usernames, set avatars, and maintain customizable identities across multiple dApps and networks.
 
