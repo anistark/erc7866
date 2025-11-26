@@ -39,15 +39,25 @@
     "contracts": "contracts"
   },
   "scripts": {
-    "docs:dev": "cd docs && DATADOG_API_KEY='' mintlify dev",
-    "docs:build": "cd docs && DATADOG_API_KEY='' mintlify build",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
     "test": "forge test",
     "test:gas": "forge test --gas-report",
     "build": "forge build",
     "clean": "forge clean"
   },
   "devDependencies": {
-    "mintlify": "^4.0.0"
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.22",
+    "vite": "^5.0.0",
+    "unocss": "^0.57.7",
+    "@unocss/preset-uno": "^0.57.7",
+    "@unocss/preset-icons": "^0.57.7",
+    "@unocss/preset-web-fonts": "^0.57.7",
+    "unplugin-vue-components": "^0.25.2",
+    "unplugin-icons": "^0.17.4",
+    "medium-zoom": "^1.1.0"
   },
   "engines": {
     "node": ">=22.0.0"

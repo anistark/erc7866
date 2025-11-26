@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy Documentation to GitHub Pages
 
 on:
   push:
@@ -29,16 +29,16 @@ jobs:
         with:
           node-version: '24'
 
-      - name: Install Mintlify
-        run: npm install -g mintlify
+      - name: Install dependencies
+        run: npm install
 
-      - name: Build
-        run: cd docs && DATADOG_API_KEY='' mintlify build
+      - name: Build docs
+        run: npm run docs:build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'docs/out'
+          path: 'docs/.vitepress/dist'
 
   deploy:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'

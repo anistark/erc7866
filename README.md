@@ -25,16 +25,18 @@ Just like Gravatar lets you set a global avatar once and use it everywhere, ERC-
 
 View the full documentation at https://anistark.github.io/erc7866
 
+The documentation is built with [VitePress](https://vitepress.dev) and deployed to GitHub Pages.
+
 ### Render Docs Locally
 
 ```sh
-# Install Mintlify globally
-npm install -g mintlify
+# Install dependencies
+npm install
 
 # Start local development server
 npm run docs:dev
 
-# Open http://localhost:3000 in your browser
+# Open http://localhost:5173 in your browser
 ```
 
 The docs will hot-reload as you make changes.
@@ -45,7 +47,13 @@ The docs will hot-reload as you make changes.
 # Build production-ready static site
 npm run docs:build
 
-# Output in ./out directory
+# Output in ./docs/.vitepress/dist directory
+```
+
+To preview the built site locally:
+
+```sh
+npm run docs:preview
 ```
 
 ## Quick Start
