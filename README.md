@@ -236,6 +236,6 @@ Estimated costs based on the SoulProfile.sol implementation:
 
 ## Testnet Deployments
 
-Coming soon! Track [releases](https://github.com/yourusername/erc7866/releases) for testnet addresses.
+Coming soon! Track [releases](https://github.com/anistark/erc7866/releases) for testnet addresses.
 
 ## [License - MIT](./LICENSE)

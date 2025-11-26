@@ -23,4 +23,4 @@ Like Gravatar, but decentralized and on-chain: claim a soul-bound username, set 
 
 See the [Implementation Guide](./IMPLEMENTATION.md) for deployment instructions and usage examples.
 
-For the full project, visit the [main repository](https://github.com/yourusername/erc7866).
+For the full project, visit the [main repository](https://github.com/anistark/erc7866).

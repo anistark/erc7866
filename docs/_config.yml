@@ -2,4 +2,4 @@ theme: jekyll-theme-minimal
 title: ERC-7866 Decentralised User Profiles
 description: A production-ready standard for decentralized, interoperable user profiles on EVM blockchains
 github:
-  repository_url: https://github.com/yourusername/erc7866
+  repository_url: https://github.com/anistark/erc7866
