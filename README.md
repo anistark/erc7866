@@ -206,10 +206,19 @@ contract MyDApp {
 
 ## Gas Costs
 
-- **Profile Creation**: ~50,000 gas
-- **Update Avatar**: ~30,000 gas per operation
-- **Profile Lookup**: ~5,000 gas (view function)
-- **Avatar Lookup**: ~3,000 gas (view function)
+Estimated costs based on the SoulProfile.sol implementation:
+
+- **Profile Creation**: ~50,000 gas (stores Profile struct, username mapping, and state flags)
+- **Update Avatar**: ~30,000 gas per operation (SSTORE for avatar URI and visibility)
+- **Profile Lookup**: ~5,000 gas (view function, reading Profile struct from storage)
+- **Avatar Lookup**: ~3,000 gas (view function, reading from dappAvatars mapping)
+
+**Important Notes:**
+- These are rough estimates; actual gas depends on network, compiler optimizations, and EVM version
+- Add 21,000 base transaction cost plus calldata costs to on-chain operations
+- Gas varies between networks (Ethereum mainnet vs. Layer 2s like Polygon, Arbitrum)
+- Costs do not include external calls or reentrancy checks
+- For production, benchmark on your target network before deployment
 
 ## Documentation
 
@@ -229,6 +238,4 @@ contract MyDApp {
 
 Coming soon! Track [releases](https://github.com/yourusername/erc7866/releases) for testnet addresses.
 
-## License
-
-MIT - See LICENSE file
+## [License - MIT](./LICENSE)

@@ -167,11 +167,32 @@ Metadata JSON structure:
 
 ## Gas Considerations
 
-- Profile creation: ~50k gas
-- Avatar updates: ~30k gas per dApp avatar
-- Reads are view functions (no gas)
+Estimated costs based on the SoulProfile.sol implementation:
 
-Privacy checks happen at function call time, not at storage level.
+- **Profile creation**: ~50,000 gas (stores Profile struct, username mapping, state flags)
+- **Avatar updates**: ~30,000 gas per dApp avatar (SSTORE for URI and visibility boolean)
+- **Reads**: View functions cost no gas (SLOAD only, no state changes)
+
+**Important Notes:**
+
+These estimates are based on:
+- EVM storage operations (SSTORE ~20,000 gas, SLOAD ~3,000 gas depending on access patterns)
+- String storage and mapping operations
+- The specific SoulProfile.sol implementation
+
+Actual costs vary based on:
+- Target network (Ethereum mainnet vs. Layer 2s)
+- Solidity compiler version and optimization settings
+- EVM upgrades and hardforks
+- Existing storage state (warm vs. cold storage access)
+
+**For Production:**
+- Always benchmark on your target network before deployment
+- Include 21,000 base transaction cost in your estimates
+- Account for calldata costs (~16 gas per non-zero byte, ~4 per zero byte)
+- Test with actual transaction traces using tools like Hardhat or Foundry
+
+Privacy checks happen at function call time (in the execution layer), not at storage level.
 
 ## Common Patterns
 
