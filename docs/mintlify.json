@@ -1,0 +1,15 @@
+{
+  "name": "ERC-7866",
+  "openapi": "https://example.com/openapi.json",
+  "theme": "mint",
+  "favicon": "/public/favicon.svg",
+  "colors": {
+    "primary": "#6366f1"
+  },
+  "topbarLinks": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/anistark/erc7866"
+    }
+  ]
+}

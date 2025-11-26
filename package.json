@@ -1,0 +1,55 @@
+{
+  "name": "erc7866",
+  "version": "1.0.0",
+  "description": "Gravatar for Web3 - ERC-7866 Standard for Decentralised User Profiles",
+  "homepage": "https://github.com/anistark/erc7866#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anistark/erc7866.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anistark/erc7866/issues"
+  },
+  "author": {
+    "name": "Kumar Anirudha",
+    "url": "https://github.com/anistark"
+  },
+  "license": "MIT",
+  "keywords": [
+    "ethereum",
+    "erc",
+    "erc7866",
+    "soulbound",
+    "profile",
+    "identity",
+    "web3",
+    "smart-contracts",
+    "solidity",
+    "decentralised-profile"
+  ],
+  "main": "contracts/core/SoulProfile.sol",
+  "files": [
+    "contracts",
+    "docs",
+    "LICENSE",
+    "README.md"
+  ],
+  "directories": {
+    "doc": "docs",
+    "contracts": "contracts"
+  },
+  "scripts": {
+    "docs:dev": "cd docs && DATADOG_API_KEY='' mintlify dev",
+    "docs:build": "cd docs && DATADOG_API_KEY='' mintlify build",
+    "test": "forge test",
+    "test:gas": "forge test --gas-report",
+    "build": "forge build",
+    "clean": "forge clean"
+  },
+  "devDependencies": {
+    "mintlify": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
