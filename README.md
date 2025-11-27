@@ -1,10 +1,16 @@
-# ERC-7866: Decentralised User Profiles
+# ⟠ ERC-7866: Decentralised User Profiles
 
 **Gravatar for Web3** — A production-ready standard for decentralized, interoperable user profiles on EVM blockchains. Users can claim unique usernames, set avatars, and maintain customizable identities across multiple dApps and networks.
 
 Just like Gravatar lets you set a global avatar once and use it everywhere, ERC-7866 lets you claim a soul-bound username and avatar on-chain. But with full control, privacy options, and dApp-specific customization.
 
 📖 **[Read the EIP-7866 specification](https://eips.ethereum.org/EIPS/eip-7866)**
+
+## Requirements
+
+- **Node.js**: 22+ (recommended: 24)
+- **npm**: 10+
+- **Foundry**: For smart contract development (optional)
 
 ## Features
 
@@ -14,6 +20,41 @@ Just like Gravatar lets you set a global avatar once and use it everywhere, ERC-
 - **Multi-Chain Ready**: Same identity format works across Ethereum, Polygon, Arbitrum, and other EVM chains
 - **Off-Chain Efficient**: Metadata stored on IPFS/Arweave with minimal on-chain footprint
 - **Event-Driven**: Full event logging for profile discovery and indexing
+
+## Documentation
+
+View the full documentation at https://anistark.github.io/erc7866
+
+The documentation is built with [VitePress](https://vitepress.dev) and deployed to GitHub Pages.
+
+### Render Docs Locally
+
+```sh
+# Install dependencies
+npm install
+
+# Start local development server
+npm run docs:dev
+
+# Open http://localhost:5173 in your browser
+```
+
+The docs will hot-reload as you make changes.
+
+### Build Static Site
+
+```sh
+# Build production-ready static site
+npm run docs:build
+
+# Output in ./docs/.vitepress/dist directory
+```
+
+To preview the built site locally:
+
+```sh
+npm run docs:preview
+```
 
 ## Quick Start
 
@@ -234,8 +275,4 @@ Estimated costs based on the SoulProfile.sol implementation:
 - **No Reentrancy**: Safe from reentrancy attacks; state changes before external calls
 - **Ownership**: Only profile owner can modify their profile
 
-## Testnet Deployments
-
-Coming soon! Track [releases](https://github.com/anistark/erc7866/releases) for testnet addresses.
-
-## [License - MIT](./LICENSE)
+**[License - MIT](./LICENSE)**
