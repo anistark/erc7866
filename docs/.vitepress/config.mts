@@ -1,12 +1,15 @@
 import { defineConfig } from 'vitepress'
 
+const base = process.env.NODE_ENV === 'production' ? '/erc7866/' : '/'
+
 export default defineConfig({
+  base,
   title: 'ERC-7866',
   description: 'Gravatar for Web3 - ERC-7866 Standard for Decentralised User Profiles',
   lang: 'en-US',
 
   head: [
-    ['link', { rel: 'icon', href: '/favicon.svg' }],
+    ['link', { rel: 'icon', href: `${base}favicon.svg` }],
     ['meta', { name: 'theme-color', content: '#6366f1' }],
   ],
 
