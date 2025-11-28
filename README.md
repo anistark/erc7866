@@ -4,7 +4,10 @@
 
 Just like Gravatar lets you set a global avatar once and use it everywhere, ERC-7866 lets you claim a soul-bound username and avatar on-chain. But with full control, privacy options, and dApp-specific customization.
 
+![eth-dark](https://github.com/user-attachments/assets/e7fd8e1f-8c22-4560-b6cb-5d0eb11a505e)
+
 📖 **[Read the EIP-7866 specification](https://eips.ethereum.org/EIPS/eip-7866)**
+
 
 ## Requirements
 
