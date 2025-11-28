@@ -78,5 +78,5 @@ Just like you set a Gravatar once and use it everywhere on the web, ERC-7866 let
 - **Account Recovery** — Identity survives wallet loss
 
 <Tip>
-Ready to get started? Check out the [Quick Start](/quickstart) guide.
+Ready to get started? Check out the <a href="/quickstart">Quick Start</a> guide.
 </Tip>
